@@ -67,12 +67,16 @@ COINMARKETCAP_API_KEY=
 
 ## Деплой контрактов
 
+Запускаем Hardhat Network
+```bash
+npx hardhat node
+```
 ### Деплой контракта на локальную сеть
 
 Для запуска контракта в локальной сети выполните команду:
 
 ```bash
-npx hardhat deploy --network localhost
+npx hardhat ignition deploy ignition/modules/MotoWorkshop.ts --network localhost
 ```
 
 ### Деплой контракта на Sepolia
@@ -80,7 +84,7 @@ npx hardhat deploy --network localhost
 Для деплоя контракта на тестовую сеть Sepolia:
 
 ```bash
-npx hardhat deploy --network sepolia
+npx hardhat ignition deploy ignition/modules/MotoWorkshop.ts --network sepolia
 ```
 
 ### Верификация контракта на Etherscan
